@@ -8,6 +8,8 @@
   position: relative; // For dropdowns
   display: table;
   border-collapse: separate; // prevent input groups from inheriting border styles from table cells when placed within a table
+background-color: $white;
+  @include box-shadow(0 1px 1px rgba(0,0,0,.075));
 
   // Undo padding and float of grid classes
   &[class*="col-"] {
@@ -21,6 +23,7 @@
     // proper border colors.
     position: relative;
     z-index: 2;
+    border: none;
 
     // IE9 fubars the placeholder attribute in text inputs and the arrows on
     // select elements in input groups. To fix it, we float the input. Details:
@@ -89,7 +92,7 @@
   &.input-sm {
     padding: $padding-small-vertical $padding-small-horizontal;
     font-size: $font-size-small;
-    border-radius: $input-border-radius-small;
+    border-radius: $input-border-radius-large;
   }
   &.input-lg {
     padding: $padding-large-vertical $padding-large-horizontal;
@@ -143,6 +146,9 @@
   // element above the siblings.
   > .btn {
     position: relative;
+    background: transparent;
+    border: none;
+
     + .btn {
       margin-left: -1px;
     }

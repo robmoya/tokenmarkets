@@ -1,0 +1,13 @@
+// Ribbons
+
+.ribbon {
+    background-color: $brand-info;
+    @include gradient-vertical(lighten($brand-info,$darken-percentage), darken($brand-info,$darken-percentage));
+    color: $white;
+    display: inline-block;
+    padding: .5em .8em;
+    font-size: $font-size-h6/1.5;
+    border-radius: $border-radius-base/2;
+    box-shadow: 0 2px 2px rgba(0,0,0,.2);
+    text-transform: uppercase;
+}

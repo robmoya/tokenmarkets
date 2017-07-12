@@ -7,16 +7,628 @@
     <link rel="icon" type="image/x-icon" href="./assets/images/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="./assets/libs/animate.min.css">
+
 </head>
 <body>
-    <div class="container">
-        <div class="row">
-            <div class="col-xs-12">
-                <h1 class="page-header">TokenMarkets</h1>
-                <p class="lead">Excellentwlvnwnvw </p>
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xs-4">
+                    <ul class="nav navbar-nav">
+                        <!-- <li><a href="#">Link</a></li> -->
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-bars"></i> Store</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#" disabled>Categories</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="#">Music</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-xs-4">
+                    <div class="navbar-header">
+                        <a class="navbar-brand" href="#"><img src="./assets/images/markets-logo.png" alt=""></a>
+                    </div>
+                </div>
+                <div class="col-xs-4">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="">Login or Register</a></li>
+                        <li class="hidden-sm hidden-xs"></li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </nav>
+
+    <div class="panel panel-default no-margin">
+        <div class="panel-heading">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-4">
+                        <form action="">
+                            <div class="input-group input-group-sm">
+                                <input type="text" class="form-control" placeholder="Search for...">
+                                <span class="input-group-btn">
+                                    <button class="btn btn-default" type="button"><i class="fa fa-search text-info"></i></button>
+                                </span>
+                            </div><!-- /input-group -->
+                        </form>
+                    </div>
+                    <div class="col-sm-4 col-sm-offset-4 text-right">
+                        <span class="h4 no-margin">
+                            <a href="" class="text-left btn-link h3">
+                                <small>Your Cart</small> <span class="badge"><i class="fa fa-shopping-cart"></i> 2 </span>
+                            </a>
+                        </span>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-    <script src="index.js"></script>
+
+    <div class="jumbotron">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4 col-sm-offset-1">
+                    <!-- Flip -->
+                    <div class="flip-container wow fadeInLeft" ontouchstart="this.classList.toggle('hover');">
+                        <div class="flipper">
+                            <div class="front">
+                                <img class="contrast brightness" src="./assets/images/tatiana-concert.jpeg" alt="">
+                            </div>
+                            <div class="back">
+                                <p>"Keep the Faith"</p>
+                                <p class="h6">is now on Sale</p>
+                                <button class="btn btn-warning"><i class="fa fa-bitcoin"></i> 0.02</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-5">
+                    <h1 class="wow fadeIn" data-wow-delay=".2s">
+                        <strong><i>"KEEP THE FAITH"</i></strong> is Tatiana's Latest Album
+                    </h1>
+                    <br>
+                    <button class="btn btn-primary">GET IT NOW</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--  -->
+
+
+    <!--  -->
+
+    <div class="container">
+
+        <!-- Featured Catalog -->
+        <div class="row">
+            <div class="col-xs-12">
+                <!-- Featured Catalogs -->
+                <section class="text-center">
+                    <br><br>
+                    <h2 class="h4"><strong>Featured Catalogs</strong></h2>
+                    <br><br>
+                    <div>
+                        <!-- Thumbnail -->
+                        <div class="thumbnail thumbnail-lg">
+                            <span class="ribbon">Featured <i class="fa fa-star"></i></span>
+                            <div class="image">
+                                <img src="./assets/images/adam-forest.jpeg" alt="...">
+                            </div>
+                            <div class="caption">
+                                <h3 class="h5">Adam B Levine's Curated Shop</h3>
+                                <p class="h6 text-muted"><small>11 items</small></p>
+                                <div class="btn-group btn-group-xs">
+                                    <a href="#" class="btn btn-primary" role="button" data-toggle="modal" data-target="#myModal"><i class="fa fa-shopping-cart"></i> Add</a>
+                                    <div class="btn-group btn-group-xs">
+                                        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <i class="fa fa-dollar text-info"></i> 13.00
+                                        <i class="fa fa-chevron-down"></i>
+                                        </button>
+                                        <ul class="dropdown-menu">
+                                        <li><a href="#">100 PepeCash</a></li>
+                                        <li><a href="#"><i class="fa fa-bitcoin"></i>0.02</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="thumbnail thumbnail-lg">
+                            <span class="ribbon">Featured <i class="fa fa-star"></i></span>
+                            <div class="image">
+                                <img src="./assets/images/color-ep.jpeg" alt="...">
+                            </div>
+                            <div class="caption">
+                                <h3 class="h5">Cryptochainer's Catalog</h3>
+                                <p class="h6 text-muted"><small>18 items</small></p>
+                                <div class="btn-group btn-group-xs">
+                                    <a href="#" class="btn btn-primary" role="button"><i class="fa fa-shopping-cart"></i> Add</a>
+                                    <div class="btn-group btn-group-xs">
+                                        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <i class="fa fa-dollar text-info"></i> 13.00
+                                        <i class="fa fa-chevron-down"></i>
+                                        </button>
+                                        <ul class="dropdown-menu">
+                                        <li><a href="#">100 PepeCash</a></li>
+                                        <li><a href="#"><i class="fa fa-bitcoin"></i>0.02</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="thumbnail thumbnail-lg">
+                            <span class="ribbon">Featured <i class="fa fa-star"></i></span>
+                            <div class="image">
+                                <img src="./assets/images/john-barret-guitar.jpeg" alt="...">
+                            </div>
+                            <div class="caption">
+                                <h3 class="h5">LTB Network Marketplace</h3>
+                                <p class="h6 text-muted"><small>18 items</small></p>
+                                <div class="btn-group btn-group-xs">
+                                    <a href="#" class="btn btn-primary" role="button"><i class="fa fa-shopping-cart"></i> Add</a>
+                                    <div class="btn-group btn-group-xs">
+                                        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <i class="fa fa-dollar text-info"></i> 13.00
+                                        <i class="fa fa-chevron-down"></i>
+                                        </button>
+                                        <ul class="dropdown-menu">
+                                        <li><a href="#">100 PepeCash</a></li>
+                                        <li><a href="#"><i class="fa fa-bitcoin"></i>0.02</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="text-center">
+                        <br>
+                        <button class="btn btn-primary">Check All Featured Catalogs</button>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <hr>
+
+        <!-- Featured Catalog -->
+        <div class="row">
+            <div class="col-xs-12">
+                <!-- Featured Catalogs -->
+                <section class="text-center">
+                    <br>
+                    <h2 class="h4"><strong>What's new</strong></h2>
+                    <br><br>
+                    <div>
+                        <!-- Thumbnail -->
+                        <div class="thumbnail">
+                            <span class="ribbon">Featured <i class="fa fa-star"></i></span>
+                            <div class="image">
+                                <img src="./assets/images/adam-forest.jpeg" alt="...">
+                            </div>
+                            <div class="caption">
+                                <h3 class="h5">Adam B Levine's Curated Shop</h3>
+                                <p class="h6 text-muted"><small>11 items</small></p>
+                                <div class="btn-group btn-group-xs">
+                                    <a href="#" class="btn btn-primary" role="button"><i class="fa fa-shopping-cart"></i> Add</a>
+                                    <div class="btn-group btn-group-xs">
+                                        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <i class="fa fa-dollar text-info"></i> 13.00
+                                        <i class="fa fa-chevron-down"></i>
+                                        </button>
+                                        <ul class="dropdown-menu">
+                                        <li><a href="#">100 PepeCash</a></li>
+                                        <li><a href="#"><i class="fa fa-bitcoin"></i>0.02</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="thumbnail">
+                            <span class="ribbon">Featured <i class="fa fa-star"></i></span>
+                            <div class="image">
+                                <img src="./assets/images/color-ep.jpeg" alt="...">
+                            </div>
+                            <div class="caption">
+                                <h3 class="h5">Cryptochainer's Catalog</h3>
+                                <p class="h6 text-muted"><small>18 items</small></p>
+                                <div class="btn-group btn-group-xs">
+                                    <a href="#" class="btn btn-primary" role="button"><i class="fa fa-shopping-cart"></i> Add</a>
+                                    <div class="btn-group btn-group-xs">
+                                        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <i class="fa fa-dollar text-info"></i> 13.00
+                                        <i class="fa fa-chevron-down"></i>
+                                        </button>
+                                        <ul class="dropdown-menu">
+                                        <li><a href="#">100 PepeCash</a></li>
+                                        <li><a href="#"><i class="fa fa-bitcoin"></i>0.02</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="thumbnail">
+                            <span class="ribbon">Featured <i class="fa fa-star"></i></span>
+                            <div class="image">
+                                <img src="./assets/images/john-barret-guitar.jpeg" alt="...">
+                            </div>
+                            <div class="caption">
+                                <h3 class="h5">LTB Network Marketplace</h3>
+                                <p class="h6 text-muted"><small>18 items</small></p>
+                                <div class="btn-group btn-group-xs">
+                                    <a href="#" class="btn btn-primary" role="button"><i class="fa fa-shopping-cart"></i> Add</a>
+                                    <div class="btn-group btn-group-xs">
+                                        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <i class="fa fa-dollar text-info"></i> 13.00
+                                        <i class="fa fa-chevron-down"></i>
+                                        </button>
+                                        <ul class="dropdown-menu">
+                                        <li><a href="#">100 PepeCash</a></li>
+                                        <li><a href="#"><i class="fa fa-bitcoin"></i>0.02</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="thumbnail">
+                            <span class="ribbon">Featured <i class="fa fa-star"></i></span>
+                            <div class="image">
+                                <img src="./assets/images/digital-shout-concert.jpeg" alt="...">
+                            </div>
+                            <div class="caption">
+                                <h3 class="h5">SHOP The Tatiana Store</h3>
+                                <p class="h6">20 items</p>
+                                <div class="btn-group btn-group-xs">
+                                    <a href="#" class="btn btn-primary" role="button"><i class="fa fa-shopping-cart"></i> Add</a>
+                                    <div class="btn-group btn-group-xs">
+                                        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <i class="fa fa-dollar text-info"></i> 13.00
+                                        <i class="fa fa-chevron-down"></i>
+                                        </button>
+                                        <ul class="dropdown-menu">
+                                        <li><a href="#">100 PepeCash</a></li>
+                                        <li><a href="#"><i class="fa fa-bitcoin"></i>0.02</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="thumbnail">
+                            <span class="ribbon">Featured <i class="fa fa-star"></i></span>
+                            <div class="image">
+                                <img src="./assets/images/adam-forest.jpeg" alt="...">
+                            </div>
+                            <div class="caption">
+                                <h3 class="h5">Adam B Levine's Curated Shop</h3>
+                                <p class="h6">11 items</p>
+                                <div class="btn-group btn-group-xs">
+                                    <a href="#" class="btn btn-primary" role="button"><i class="fa fa-shopping-cart"></i> Add</a>
+                                    <div class="btn-group btn-group-xs">
+                                        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <i class="fa fa-dollar text-info"></i> 13.00
+                                        <i class="fa fa-chevron-down"></i>
+                                        </button>
+                                        <ul class="dropdown-menu">
+                                        <li><a href="#">100 PepeCash</a></li>
+                                        <li><a href="#"><i class="fa fa-bitcoin"></i>0.02</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="text-center">
+                        <br>
+                        <button class="btn btn-primary">Check All New</button>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <hr>
+
+
+
+    </div>
+
+    <section class="bg-default">
+        <div class="container">
+            <!-- What's New -->
+            <div class="row">
+                <div class="col-xs-12">
+                    <!-- Best Sellers -->
+                    <section class="text-center">
+                        <br>
+                        <h2 class="h4"><strong>Best Sellers</strong></h2>
+                        <br>
+                        <div>
+                            <!-- Thumbnail -->
+                            <div class="thumbnail thumbnail-sm">
+
+                                <div class="image">
+                                    <img src="./assets/images/adam-forest.jpeg" alt="...">
+                                </div>
+                                <div class="caption">
+                                    <h3 class="h5">Adam B Levine's Curated Shop</h3>
+                                    <p class="h6 text-muted"><small>11 items</small></p>
+                                    <div class="btn-group btn-group-xs">
+                                        <a href="#" class="btn btn-primary" role="button"><i class="fa fa-shopping-cart"></i> Add</a>
+                                        <div class="btn-group btn-group-xs">
+                                            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <i class="fa fa-dollar text-info"></i> 13.00
+                                            <i class="fa fa-chevron-down"></i>
+                                            </button>
+                                            <ul class="dropdown-menu">
+                                            <li><a href="#">100 PepeCash</a></li>
+                                            <li><a href="#"><i class="fa fa-bitcoin"></i>0.02</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="thumbnail thumbnail-sm">
+
+                                <div class="image">
+                                    <img src="./assets/images/color-ep.jpeg" alt="...">
+                                </div>
+                                <div class="caption">
+                                    <h3 class="h5">Cryptochainer's Catalog</h3>
+                                    <p class="h6 text-muted"><small>18 items</small></p>
+                                    <div class="btn-group btn-group-xs">
+                                        <a href="#" class="btn btn-primary" role="button"><i class="fa fa-shopping-cart"></i> Add</a>
+                                        <div class="btn-group btn-group-xs">
+                                            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <i class="fa fa-dollar text-info"></i> 13.00
+                                            <i class="fa fa-chevron-down"></i>
+                                            </button>
+                                            <ul class="dropdown-menu">
+                                            <li><a href="#">100 PepeCash</a></li>
+                                            <li><a href="#"><i class="fa fa-bitcoin"></i>0.02</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="thumbnail thumbnail-sm">
+
+                                <div class="image">
+                                    <img src="./assets/images/john-barret-guitar.jpeg" alt="...">
+                                </div>
+                                <div class="caption">
+                                    <h3 class="h5">LTB Network Marketplace</h3>
+                                    <p class="h6 text-muted"><small>18 items</small></p>
+                                    <div class="btn-group btn-group-xs">
+                                        <a href="#" class="btn btn-primary" role="button"><i class="fa fa-shopping-cart"></i> Add</a>
+                                        <div class="btn-group btn-group-xs">
+                                            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <i class="fa fa-dollar text-info"></i> 13.00
+                                            <i class="fa fa-chevron-down"></i>
+                                            </button>
+                                            <ul class="dropdown-menu">
+                                            <li><a href="#">100 PepeCash</a></li>
+                                            <li><a href="#"><i class="fa fa-bitcoin"></i>0.02</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="thumbnail thumbnail-sm">
+
+                                <div class="image">
+                                    <img src="./assets/images/digital-shout-concert.jpeg" alt="...">
+                                </div>
+                                <div class="caption">
+                                    <h3 class="h5">SHOP The Tatiana Store</h3>
+                                    <p class="h6">20 items</p>
+                                    <div class="btn-group btn-group-xs">
+                                        <a href="#" class="btn btn-primary" role="button"><i class="fa fa-shopping-cart"></i> Add</a>
+                                        <div class="btn-group btn-group-xs">
+                                            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <i class="fa fa-dollar text-info"></i> 13.00
+                                            <i class="fa fa-chevron-down"></i>
+                                            </button>
+                                            <ul class="dropdown-menu">
+                                            <li><a href="#">100 PepeCash</a></li>
+                                            <li><a href="#"><i class="fa fa-bitcoin"></i>0.02</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="thumbnail thumbnail-sm">
+
+                                <div class="image">
+                                    <img src="./assets/images/adam-forest.jpeg" alt="...">
+                                </div>
+                                <div class="caption">
+                                    <h3 class="h5">Adam B Levine's Curated Shop</h3>
+                                    <p class="h6">11 items</p>
+                                    <div class="btn-group btn-group-xs">
+                                        <a href="#" class="btn btn-primary" role="button"><i class="fa fa-shopping-cart"></i> Add</a>
+                                        <div class="btn-group btn-group-xs">
+                                            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <i class="fa fa-dollar text-info"></i> 13.00
+                                            <i class="fa fa-chevron-down"></i>
+                                            </button>
+                                            <ul class="dropdown-menu">
+                                            <li><a href="#">100 PepeCash</a></li>
+                                            <li><a href="#"><i class="fa fa-bitcoin"></i>0.02</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="text-center">
+                            <br>
+                            <button class="btn btn-primary">Check All Best Sellers</button>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+        <br><br>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 text-center">
+                    <ul class="list-unstyled">
+                        <li>© 2017 Tokenly<li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- Add To List -->
+    <div class="modal fade" tabindex="-1" role="dialog" id="myModal">
+        <div class="modal-dialog modal-lg " role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title">Adam B Levine's Curated Shop</h4>
+                    <small class="text-muted">14 items</small>
+                </div>
+                <div class="modal-body">
+                    <p>If you want to tip Adam $10, add 10 of this item to your cart. Enter your message during checkout when prompted, and thanks for your donation!</p>
+                    <!-- Thumbnails -->
+                    <div class="thumbnail thumbnail-sm">
+
+                        <div class="image">
+                            <img src="./assets/images/adam-forest.jpeg" alt="...">
+                        </div>
+                        <div class="caption">
+                            <h3 class="h5">Adam B Levine's Curated Shop</h3>
+                            <p class="h6 text-muted"><small>11 items</small></p>
+                            <div class="btn-group btn-group-xs">
+                                <a href="#" class="btn btn-primary" role="button"><i class="fa fa-shopping-cart"></i> Add</a>
+                                <div class="btn-group btn-group-xs">
+                                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <i class="fa fa-dollar text-info"></i> 13.00
+                                    <i class="fa fa-chevron-down"></i>
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                    <li><a href="#">100 PepeCash</a></li>
+                                    <li><a href="#"><i class="fa fa-bitcoin"></i>0.02</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="thumbnail thumbnail-sm">
+
+                        <div class="image">
+                            <img src="./assets/images/color-ep.jpeg" alt="...">
+                        </div>
+                        <div class="caption">
+                            <h3 class="h5">Cryptochainer's Catalog</h3>
+                            <p class="h6 text-muted"><small>18 items</small></p>
+                            <div class="btn-group btn-group-xs">
+                                <a href="#" class="btn btn-primary" role="button"><i class="fa fa-shopping-cart"></i> Add</a>
+                                <div class="btn-group btn-group-xs">
+                                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <i class="fa fa-dollar text-info"></i> 13.00
+                                    <i class="fa fa-chevron-down"></i>
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                    <li><a href="#">100 PepeCash</a></li>
+                                    <li><a href="#"><i class="fa fa-bitcoin"></i>0.02</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="thumbnail thumbnail-sm">
+
+                        <div class="image">
+                            <img src="./assets/images/john-barret-guitar.jpeg" alt="...">
+                        </div>
+                        <div class="caption">
+                            <h3 class="h5">LTB Network Marketplace</h3>
+                            <p class="h6 text-muted"><small>18 items</small></p>
+                            <div class="btn-group btn-group-xs">
+                                <a href="#" class="btn btn-primary" role="button"><i class="fa fa-shopping-cart"></i> Add</a>
+                                <div class="btn-group btn-group-xs">
+                                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <i class="fa fa-dollar text-info"></i> 13.00
+                                    <i class="fa fa-chevron-down"></i>
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                    <li><a href="#">100 PepeCash</a></li>
+                                    <li><a href="#"><i class="fa fa-bitcoin"></i>0.02</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="thumbnail thumbnail-sm">
+
+                        <div class="image">
+                            <img src="./assets/images/digital-shout-concert.jpeg" alt="...">
+                        </div>
+                        <div class="caption">
+                            <h3 class="h5">SHOP The Tatiana Store</h3>
+                            <p class="h6">20 items</p>
+                            <div class="btn-group btn-group-xs">
+                                <a href="#" class="btn btn-primary" role="button"><i class="fa fa-shopping-cart"></i> Add</a>
+                                <div class="btn-group btn-group-xs">
+                                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <i class="fa fa-dollar text-info"></i> 13.00
+                                    <i class="fa fa-chevron-down"></i>
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                    <li><a href="#">100 PepeCash</a></li>
+                                    <li><a href="#"><i class="fa fa-bitcoin"></i>0.02</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <div class="col-sm-6 text-left">
+                        <a href="">Check Adam's Store</a>
+                    </div>
+                    <div class="col-sm-6 text-right">
+                        <a href="">Or See Detailed Info about this product</a>
+                    </div>
+                </div>
+                <div class="modal-footer text-center">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-primary">Add to Cart</button>
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fa fa-chevron-down"></i>
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">100 PepeCash</a></li>
+                                <li><a href="#"><i class="fa fa-bitcoin"></i>0.02</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
+
+    <script src="./assets/libs/jquery.js"></script>
+    <script src="./assets/libs/bootstrap.min.js"></script>
+
+    <script src="./assets/libs/wow.min.js"></script>
+    <script>
+    new WOW().init();</script>
+
+
 </body>
 </html>

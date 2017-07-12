@@ -159,3 +159,20 @@ hr {
 [role="button"] {
   cursor: pointer;
 }
+
+// Footer
+footer {
+    margin-top: $line-height-computed*4;
+    background-color: $state-info-bg;
+    color: $white;
+    padding: $line-height-computed/2 0;
+}
+
+
+// Helpers
+.no-margin{
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}

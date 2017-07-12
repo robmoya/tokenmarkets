@@ -131,6 +131,8 @@ mark,
 
 @include bg-variant('.bg-danger', $state-danger-bg);
 
+@include bg-variant('.bg-default', #E9E9E8);
+
 
 // Page header
 // -------------------------
@@ -236,7 +238,6 @@ abbr[data-original-title] {
   font-size: 90%;
   @extend .text-uppercase;
 }
-
 // Blockquotes
 blockquote {
   padding: ($line-height-computed / 2) $line-height-computed;

@@ -71,6 +71,12 @@
     color: $dropdown-link-color;
     white-space: nowrap; // prevent links from randomly breaking onto new lines
   }
+
+  // Icons Inside a Dropdown Menu
+  .glyphicon,.fa {
+      color: $brand-info;
+      padding-right: .2em;
+  }
 }
 
 // Hover/Focus state

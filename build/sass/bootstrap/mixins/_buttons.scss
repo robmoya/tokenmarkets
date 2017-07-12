@@ -7,31 +7,32 @@
   color: $color;
   background-color: $background;
   border-color: $border;
+  @include gradient-vertical($background,darken($background,$darken-percentage))
 
   &:focus,
   &.focus {
     color: $color;
     background-color: darken($background, 10%);
-        border-color: darken($border, 25%);
+        border-color: darken($border, 10%);
   }
   &:hover {
     color: $color;
     background-color: darken($background, 10%);
-        border-color: darken($border, 12%);
+        border-color: darken($border, 5%);
   }
   &:active,
   &.active,
   .open > &.dropdown-toggle {
     color: $color;
     background-color: darken($background, 10%);
-        border-color: darken($border, 12%);
+        border-color: darken($border, 5%);
 
     &:hover,
     &:focus,
     &.focus {
       color: $color;
       background-color: darken($background, 17%);
-          border-color: darken($border, 25%);
+          border-color: darken($border, 10%);
     }
   }
   &:active,

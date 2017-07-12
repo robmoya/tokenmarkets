@@ -1,0 +1,104 @@
+// Flip Cards
+
+$thumb-w : $thumbnail-size*1.4;
+$thumb-h:  $thumb-w;
+
+.flip-container {
+    -webkit-perspective: 1000;
+    -moz-perspective: 1000;
+    -o-perspective: 1000;
+    perspective: 1000;
+    margin: auto;
+
+    .flipper {
+        -webkit-transition: 0.6s;
+    	-webkit-transform-style: preserve-3d;
+        -webkit-transition-timing-function: ease-in-out;
+
+
+    	-moz-transition: 0.6s;
+    	-moz-transform-style: preserve-3d;
+        -moz-transition-timing-function: ease-in-out;
+
+
+      -o-transition: 0.6s;
+    	-o-transform-style: preserve-3d;
+        -o-transition-timing-function: ease-in-out;
+
+
+    	transition: 0.6s;
+    	transform-style: preserve-3d;
+        transition-timing-function: ease-in-out;
+
+
+    	position: relative;
+
+    }
+
+    &:hover, &.hover {
+        .flipper {
+            -webkit-transform: rotateY(180deg);
+            -moz-transform: rotateY(180deg);
+            -o-transform: rotateY(180deg);
+            transform: rotateY(180deg);
+        }
+    }
+
+}
+
+
+.flip-container, .front, .back {
+	width: $thumb-w;
+	height: $thumb-h;
+    color: $text-color;
+}
+
+
+.front, .back {
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
+	backface-visibility: hidden;
+
+	position: absolute;
+	top: 0;
+	left: 0;
+    -webkit-box-shadow: 0 10px 6px -6px darken($brand-info,20%);
+	   -moz-box-shadow: 0 10px 6px -6px darken($brand-info,20%);
+	        box-shadow: 0 10px 6px -6px darken($brand-info,20%);
+
+    border-radius: $border-radius-base;
+    overflow: hidden;
+
+
+    img {
+        object-fit: cover;
+        display: block;
+        height: $thumb-h;
+        width: $thumb-w;
+    }
+}
+
+.front {
+    background-color: $brand-primary;
+	z-index: 2;
+}
+
+.back {
+	-webkit-transform: rotateY(180deg);
+	-moz-transform: rotateY(180deg);
+  -o-transform: rotateY(180deg);
+	transform: rotateY(180deg);
+	background: $white;
+    padding: 1em;
+    text-align: center;
+}
+
+.contrast {
+    -webkit-filter: contrast(120%); /* Safari */
+   filter: contrast(120%)
+}
+.brightness{
+    -webkit-filter: brightness(120%); /* Safari */
+    filter: brightness(120%);
+}
